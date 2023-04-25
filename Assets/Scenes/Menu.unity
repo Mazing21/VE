@@ -3057,7 +3057,6 @@ GameObject:
   - component: {fileID: 1518879446}
   - component: {fileID: 1518879445}
   - component: {fileID: 1518879444}
-  - component: {fileID: 1518879443}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -3086,18 +3085,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6.9837, y: -302}
   m_SizeDelta: {x: 355.1902, y: 109.0384}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1518879443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518879441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69479a2ba5c8c5a448c054e3d649ac2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1518879444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3142,9 +3129,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5084089245404440585}
-        m_TargetAssemblyTypeName: VitiButton, Assembly-CSharp
-        m_MethodName: OnClickPlayButton
+      - m_Target: {fileID: 5084089245404440584}
+        m_TargetAssemblyTypeName: menuLogicScript, Assembly-CSharp
+        m_MethodName: OnClickQuitButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3517,7 +3504,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5084089245404440584}
-        m_TargetAssemblyTypeName: IgratButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: menuLogicScript, Assembly-CSharp
         m_MethodName: OnClickPlayButton
         m_Mode: 1
         m_Arguments:
@@ -4311,7 +4298,6 @@ GameObject:
   - component: {fileID: 5084089245404440583}
   - component: {fileID: 5084089245404440576}
   - component: {fileID: 5084089245404440584}
-  - component: {fileID: 5084089245404440585}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4397,18 +4383,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ede2bf398dc4dbc468e732453655049b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5084089245404440585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5084089245404440577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b77123a370e43694f83ad39c6a30dca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &5219609228137129438
