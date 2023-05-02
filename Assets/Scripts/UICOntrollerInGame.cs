@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class UICOntrollerInGame : MonoBehaviour
 {
     public GameObject ESKMenu,miniMap;
@@ -17,6 +18,7 @@ public class UICOntrollerInGame : MonoBehaviour
                 miniMap.SetActive(false);
                 Cursor.lockState = CursorLockMode.Confined;
                 ESKMenuIsOpen = true;
+                Time.timeScale = 0;
             }
             else
             {
@@ -24,7 +26,13 @@ public class UICOntrollerInGame : MonoBehaviour
                 miniMap.SetActive(true);
                 Cursor.lockState = CursorLockMode.Locked;
                 ESKMenuIsOpen = false;
+                Time.timeScale = 1;
             }
         }
+    }
+    public void OnClickOnMenuButton()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 }
